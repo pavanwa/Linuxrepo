@@ -1,10 +1,9 @@
 #! /usr/bin/bash
-# for loop
 
-for item in *
-do 
-    if [ -d $item ]
-    then
-        echo $item
-    fi
-done
+mvn --version
+if [ "$?" -eq 0 ] 
+then
+    echo "Mavan not installed"
+else
+    echo "Maven need to install"
+fi
